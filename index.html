@@ -1,0 +1,149 @@
+<html>
+<head>
+<title>Student Portfolio</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <ul class="left-side">
+            
+            <li>SOPPA SRUTHI</li>
+            
+        </ul>
+        <ul class="right-side">
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#download">Download</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <header><p id="datetime"></p></header>
+    <button style="width: 50%; background-color: rgb(151, 135, 157);border-color: rgb(167, 191, 234); border-width: 2px;color: rgb(217, 216, 218);"  onclick="toggleDarkMode()">Toggle Dark Mode</button>
+
+<div class="container">
+    <section id="about">
+        <h1>About ME</h1><br><div style="display: flex; flex-direction: row;">
+        <div ><img src="C:\Users\sruth\OneDrive\Desktop\Portfolio\girl.png" id="abc" width="85%" height="90%"></div>
+        <div style="width: 220%; padding-left: 10%;"><p class="big">I am sruthi. Currently, I am pursuing my BTech at SRM University AP.  
+            <br>
+            I am an entusiastic learner with good aptitude skills.
+            <br>
+            I'm good with coding in at most 3 languages. And I've improved my 
+            Web development skills by working in an internship.<br>
+            I'm looking  for a position where I can apply and
+             contribute my skills  for the development of solutions.
+        </p></div></div>
+    </section><br>
+
+    <section id="education">
+        <h1>EDUCATION</h1><br><div style="display: flex; flex-direction: row;">
+        <div><p style="text-decoration: underline; color: antiquewhite;">I.UNDERGRADUATION<br></p>
+            <p>
+                SRM UNIVERSITY AP - Btech 3rd Year, Vijayawada<br>
+                Branch: Cse<br>
+                Grade: 8.9<br>
+            </p>
+            <P style="text-decoration: underline; color: antiquewhite;">II. COLLEGE</P>
+            <p>
+                SRI CHAITANYA COLLEGE, Tirupati<br>
+                Percentage: 96%<br>
+                2020 - 2022
+            </p>
+            <p style="text-decoration: underline; color: antiquewhite;">III. SCHOOLING</p>
+            <P>SRI CHAITANYA EDUCATIONAL INSTITUTIONS, Tirupati <BR>
+               2015 - 2020</P></div><div style="width: 30px;"></div>
+        <div>
+           <img src="C:\Users\sruth\OneDrive\Desktop\Portfolio\edu4.png" alt="hello" class="def" height="60%" width="50%" title="THANK YOU">
+        </div></div>
+    </section><br>
+
+    <section id="skills">
+        <h1 >SKILLS</h1><br>
+        <div style="display: flex; flex-direction: row;"><div>
+        <p >C LANGUAGE<BR>C++ OOPS<BR>PYTHON<BR>DATA STRUCTURES<BR>DBMS<BR>WEB DEVELOPMENT<br>REACT JS</p></div>
+        <div style="width: 30px;"></div>
+        <div><img src="C:\Users\sruth\OneDrive\Desktop\Portfolio\skills1.png" alt="hello" class="def" height="80%" width="60%" title="THANK YOU"></div>
+
+        </div>
+    </section><br>
+
+    <section id="download">
+        <h1 >RESUME</h1>
+        <p style="color: antiquewhite;">Click to download my RESUME 
+            <a href="file:///C:/Users/sruth/Downloads/SOPPASRUTHI-Resume.pdf" download><p>DOWNLOAD</p></a>
+        </p>
+    </section><br>
+
+    <section id="contact">
+        <h1 style="text-decoration: underline;">Write to ME</h1><div style="display: flex; flex-direction: row;">
+        <div style="width: 70%;">
+        <form id="myForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="" required>
+            <br><label for="email">Mail ID: </label>
+            <input type="text" id="email" name="email" placeholder="" required><br>
+            <label for="nUMBER">Ph NO: </label>
+            <input type="text" id="number" name="number" placeholder="" required><br>
+            <label for="sugg">Suggestions:</label>
+            <textarea id="sugg" name="sugg" placeholder="" required></textarea><br>
+            <button onclick="validateForm()" type="button">SUBMIT</button>
+        </form>
+        </div>
+       <div style="width: 60%; ">
+         <img src="C:\Users\sruth\OneDrive\Desktop\Portfolio\pen.png" alt="hello" class="def" height="70%" width="60%" title="THANK YOU"></div></div>
+    </section><br>
+
+</div>
+<footer>
+    &copy; 2024 Student portfolio 
+</footer>
+<script>
+ window.onload = function() {
+    setInterval(function() {
+        var date = new Date();
+        var displayDate = date.toLocaleDateString();
+        var displayTime = date.toLocaleTimeString();
+        document.getElementById('datetime').innerHTML = "Date: "+ displayDate + " " +"Time: "+ displayTime;
+    }, 1000); 
+}
+
+function topFunction() {
+    document.body.scrollTop = 0; 
+    document.documentElement.scrollTop = 0; 
+}
+function validateEmail(email) {
+            const emailRegex = /^[\w.-]+@[a-zA-Z-0-9]+(\.[a-zA-Z]{2,})+$/;
+            return emailRegex.test(email);
+        }
+
+        function validatePhoneNumber(phoneNumber) {
+            const pattern = /^\d{10}$/;
+            return pattern.test(phoneNumber);
+        }
+
+        function validateName(name) {
+            return name.trim() !== '';
+        }
+
+        function validateForm() {
+            const email = document.getElementById('email').value.trim();
+            const phoneNumber = document.getElementById('number').value.trim();
+            const name = document.getElementById('name').value.trim();
+
+            if (validateEmail(email) && validatePhoneNumber(phoneNumber) && validateName(name)) {
+                alert('Form submitted successfully!');
+                window.location.reload();
+            } else {
+                alert('Please fill in all fields correctly.');
+            }
+        }
+        function toggleDarkMode() {
+            const bodyElement = document.body;
+            bodyElement.classList.toggle("dark-mode");
+        }
+        
+
+</script>
+</body>
+</html>

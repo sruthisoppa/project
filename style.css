@@ -1,0 +1,281 @@
+body{
+    background-color:rgb(103, 116, 146);
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    font-size: 1.4vw;
+    line-height: 1.6;
+    margin:0;
+}
+nav{
+    display:flex;
+    justify-content: space-between;
+}
+form li{
+    display:flex;
+    justify-content: space-between;
+    padding: 5px;
+
+}
+.right-side{
+    text-align: right;
+    padding-right: 70px;
+}
+.left-side{
+    text-align: left;
+    padding-left: 50px;
+    padding: 12px 130px;
+    
+}
+nav li{
+    display: inline-flex;
+    color:white;
+    
+}
+
+li a{
+    color:white;
+    text-align: center;
+    padding: 12px 15px;
+    text-decoration: none;
+    
+    
+}
+li a:hover{
+    color:black;
+}
+li a:active{
+    text-decoration-line: underline;
+    text-decoration-color: black;
+}
+
+footer{
+   background-color: rgb(118, 99, 99);
+   color: antiquewhite;
+   padding:25px;
+   text-align: center;
+   font-size:medium;
+   border-radius: 15px;
+}
+p.big{
+    text-align: left;
+    
+    color: rgb(53, 49, 49);
+}
+p{
+    display: flex;
+    color: rgb(53, 49, 49);
+    text-align: left;
+
+}
+#rs {
+float: right;
+}
+form {
+    display:flex;
+    flex-direction:column;
+}
+section {
+    padding: 40px;
+    animation: slideIn 2s 1;
+	
+}
+header{
+  font-size: large;
+  background-color: rgb(140, 143, 170);
+  text-align: center;
+  border: 5px;
+  margin: 10px 45px 10px 45px;
+  border-radius: 40px;
+  height:30px;
+  color: rgb(213, 216, 218);
+  padding-bottom: 40px;
+  padding-left: 10%;
+  padding-top: 1px;
+}
+@keyframes slideIn {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  @keyframes pulse {
+    0%, 100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+  }
+form label {
+    color:antiquewhite;
+    font-weight: bolder;
+    text-align:start;
+}
+
+
+input[type=text], select,textarea {
+    width: 90%;
+    height: 50%;
+    padding: 10px 10px;
+    margin: 8px 0;
+    display:flex;
+    position: relative;
+    border: 1px solid #ccc;
+    border-radius: 14px;
+  }
+  button {
+    width: 140px;
+    background-color: rgb(122, 118, 156);
+    color: rgb(46, 43, 43);
+    padding: 10px 20px;
+    font-weight: bold;
+    font-size: 1.4vw;
+    margin: 8px 8px;
+    border-width: 4px;
+    border-radius: 10px;
+    border-color: antiquewhite;
+    cursor: pointer;
+   
+  }
+  .dark-mode{
+    background-color:rgb(95, 87, 87);
+    #about{
+      background-color: rgb(156, 112, 112);
+      margin:2px 20px 2px 20px;
+      padding-left: 15%;
+      padding-right: 15%;
+      padding-top: 2%;
+      padding-bottom: 5%;
+      border-radius: 50px;
+      
+  }
+  #education{
+      background-color: rgb(144, 127, 158);
+      margin:10px 20px 2px 20px;
+      padding-left: 15%;
+      padding-right: 15%;
+      padding-top: 2%;
+      padding-bottom: 5%;
+      border-radius: 50px;
+      
+  }
+  #skills{
+      background-color: rgb(68, 130, 141);
+      margin:10px 20px 2px 20px;
+      padding-left: 15%;
+      padding-right: 15%;
+      padding-top: 2%;
+      padding-bottom: 5%;
+      border-radius: 50px;
+      
+  }
+  #download{
+      background-color: rgb(122, 118, 156);
+      margin:10px 20px 2px 20px;
+      padding-left: 15%;
+      padding-right: 15%;
+      padding-top: 2%;
+      padding-bottom: 5%;
+      border-radius: 50px;
+      margin:20px;
+      
+      
+  }
+  
+  #contact{
+      background-color: rgb(156, 118, 136);
+      margin:10px 20px 2px 20px;
+      padding-left: 10%;
+      padding-right: 10%;
+      padding-top: 2%;
+      padding-bottom: 5%;
+      border-radius: 50px;
+      
+  }
+  footer{
+    background-color: rgb(47, 44, 44);
+  }
+  }
+  #abc{
+    float: left;
+    border-radius: 20px;
+    animation: fadin 1s 1;
+  }
+  .def{
+    float: right;
+    border-radius: 30px;
+    animation: fadin 1s 1;
+  }
+  section h1:hover{
+    color: black;
+
+  }
+#about{
+    background-color: rgb(132, 171, 184);
+    margin:2px 20px 2px 20px;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-top: 2%;
+    padding-bottom: 5%;
+    border-radius: 50px;
+    
+    
+    
+}
+#education{
+    background-color: rgb(122, 175, 154);
+    margin:10px 20px 2px 20px;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-top: 2%;
+    padding-bottom: 5%;
+    border-radius: 50px;
+    
+    
+}
+#skills{
+    background-color: rgb(123, 161, 175);
+    margin:10px 20px 2px 20px;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-top: 2%;
+    padding-bottom: 5%;
+    border-radius: 50px;
+    
+}
+#download{
+    background-color: rgb(140, 143, 170);
+    margin:10px 20px 2px 20px;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-top: 2%;
+    padding-bottom: 5%;
+    border-radius: 50px;
+    margin:20px;
+    
+    
+}
+
+#contact{
+    background-color: rgb(117, 157, 170);
+    margin:10px 20px 2px 20px;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 2%;
+    padding-bottom: 5%;
+    border-radius: 50px;
+    
+}
+h1{
+    color: white;
+}
